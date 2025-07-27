@@ -31,8 +31,16 @@ body {
   100% { transform: translateY(4px); }
 }
 
+@layer utilities {
 .sway {
   animation: sway 2s ease-in-out infinite;
+ }
+
+ @media (max-width: 1023px) {
+  .sway {
+    animation: none;
+  }
+ }
 }
 
 
