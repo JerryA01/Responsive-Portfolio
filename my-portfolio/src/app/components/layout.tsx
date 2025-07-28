@@ -22,10 +22,10 @@ export default function Layout({ children }: LayoutProps) {
           gyroControls: false,
           minHeight: 200.00,
           minWidth: 200.00,
-          highlightColor: 0x87ceeb,   // Light Sky Blue
-          midtoneColor: 0x00aaff,     // Strong Sky Blue
-          lowlightColor: 0x005f99,    // Deep Blue
-          baseColor: 0xcce7ff,        // Very light sky blue (almost white)
+          highlightColor: 0x87ceeb,  
+          midtoneColor: 0x00aaff,     
+          lowlightColor: 0x005f99,    
+          baseColor: 0xcce7ff,        
           speed: 3.30
         });
       });

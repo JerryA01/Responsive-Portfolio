@@ -6,12 +6,12 @@ const raleway = Raleway({
   subsets: ["latin"],
   variable: "--font-raleway",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  style: ["normal", "italic"], // full italic + normal support
+  style: ["normal", "italic"], 
   display: "swap",
 });
 
 export const metadata = {
-  title: "Jerry Arthur;s Personal Portfolio",
+  title: "Jerry Arthur's Personal Portfolio",
   description: "This is my personal portfolio where i showcase the project's I've done and currently working",
 };
 
