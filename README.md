@@ -1,9 +1,9 @@
 # Fully Responsive Personal Portfollio 
 
 ## Project Overview
-A fully responsive portfolio website showcasing my work, skills, and projects. Designed to look neat on all screen sizes—from mobile to 4K
+A user portfolio website showcasing my work, skills, and projects. Designed to look neat on all screen sizes—from mobile to 4K
 
-### Live Demo - thelink 
+### Live Demo - https://jarthur.dev/
 
 ## Tech Stack
 - Next.js - Chosen for its performance optimizations and future scalability
@@ -16,7 +16,7 @@ A fully responsive portfolio website showcasing my work, skills, and projects. D
 
 ### Getting Started
 - Clone the repo
-  - git clone
+  - git clone https://github.com/JerryA01/Responsive-Portfolio.git
 - Navigate into the folder
   - cd my-porfolio
 - Install dependencies
