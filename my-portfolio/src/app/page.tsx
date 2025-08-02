@@ -61,7 +61,7 @@ export default function Home() {
           <div className="hidden lg:grid relative w-full mx-auto lg:grid-cols-3">
 
             {/* Left Squiggle */}
-            <svg className="justify-self-start lg:ml-10 xl:ml-34 2xl:ml-65 " aria-hideen="true" width="24" height="290" viewBox="0 0 24 290 ">
+            <svg className="justify-self-start lg:ml-10 xl:ml-34 2xl:ml-65 " width="24" height="290" viewBox="0 0 24 290 ">
               <path
                 stroke="black"
                 strokeWidth="2.5"
@@ -81,7 +81,7 @@ export default function Home() {
 
 
             {/* Right Squiggle */}
-            <svg className="justify-self-end lg:-mr-40 xl:-mr-32 2xl:-mr-30" aria-hideen="true" width="24" height="290" viewBox="0 0 24 290">
+            <svg className="justify-self-end lg:-mr-40 xl:-mr-32 2xl:-mr-30" aria-hidden="true" width="24" height="290" viewBox="0 0 24 290">
               <path
                 stroke="black"
                 strokeWidth="2.5"
@@ -205,7 +205,7 @@ export default function Home() {
         {/* Hanging Squiggly Line that connects to the video frame in the bottom row, this is shown only on ultra wide screens */}
         <div className="hidden 2xl:grid relative w-full mx-auto 2xl:grid-cols-3 2xl:-mt-27">
           {/* Left Squiggle */}
-          <svg className="justify-self-start lg:ml-10 xl:ml-34 2xl:ml-130" aria-hideen="true" width="24" height="290" viewBox="0 0 24 290 ">
+          <svg className="justify-self-start lg:ml-10 xl:ml-34 2xl:ml-130" aria-hidden="true" width="24" height="290" viewBox="0 0 24 290 ">
             <path
               stroke="black"
               strokeWidth="2.5"
@@ -285,7 +285,7 @@ export default function Home() {
         </div>
 
         {/* A svg that is a squiggly connecting the description box with the video on the bottom row. */}
-        <svg className="2xl:hidden stroke-0 lg:stroke-[2.5] justify-self-start ml-85 -mt-20 lg:-ml-7 z-0" aria-hideen="true" width="500" height="300" viewBox="0 0 24 290" >
+        <svg className="2xl:hidden stroke-0 lg:stroke-[2.5] justify-self-start ml-85 -mt-20 lg:-ml-7 z-0" aria-hidden="true" width="500" height="300" viewBox="0 0 24 290" >
           <path stroke="black" fill="none">
             <animate
               attributeName="d"

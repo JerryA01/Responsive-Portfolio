@@ -9,13 +9,13 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   const vantaRef = useRef<HTMLDivElement | null>(null);
-  const vantaEffect = useRef<any>(null);
+  const vantaEffect = useRef<VantaEffect | null>(null);
 
   useEffect(() => {
     if (!vantaEffect.current && typeof window !== "undefined" && vantaRef.current) {
       import("vanta/src/vanta.fog").then((FOG) => {
         vantaEffect.current = FOG.default({
-          el: vantaRef.current,
+          el: vantaRef.current!,
           THREE,
           mouseControls: true,
           touchControls: true,
