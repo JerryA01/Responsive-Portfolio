@@ -12,19 +12,6 @@ A user portfolio website showcasing my work, skills, and projects. Designed to l
 - TypeScript - Coming from a Java background, I prefer TypeScript's strong typing for better code safety and maintainability
 
 
-## Installation&Usage
-
-### Getting Started
-- Clone the repo
-  - git clone https://github.com/JerryA01/Responsive-Portfolio.git
-- Navigate into the folder
-  - cd my-porfolio
-- Install dependencies
-   - npm install
-- Start the development server
-   - npm run dev
-
-
 ## Features
 - Fully responsive layout
 - Smooth animations with CSS and React
