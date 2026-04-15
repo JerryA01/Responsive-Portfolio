@@ -11,7 +11,20 @@ A user portfolio website showcasing my work, skills, and projects. Designed to l
 - Tailwind CSS - My first experience outside of Bootstrap; Tailwind offered a more flexibile, utility-first approach to styling
 - TypeScript - Coming from a Java background, I prefer TypeScript's strong typing for better code safety and maintainability
 
+## Installation&Usage
 
+### Getting Started
+- Ensure you're on a Linux system
+- Clone the repo
+  - git clone https://github.com/JerryA01/Responsive-Portfolio.git
+- Navigate into the folder
+  - cd my-porfolio
+- Install dependencies
+   - npm install
+- Start the development server
+   - npm run dev
+ 
+   - 
 ## Features
 - Fully responsive layout
 - Smooth animations with CSS and React
