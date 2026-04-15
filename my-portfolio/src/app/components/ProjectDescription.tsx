@@ -15,26 +15,28 @@ export default function ProjectDescription({
   githubUrl,
 }: ProjectDescriptionProps) {
   return (
-    <div>
-      <h3 className="text-xl font-semibold mb-2 text-blue-200 mt-7">{title}</h3>
-      <p>
+    <div className="flex h-full flex-col justify-center px-6 py-6">
+      <h3 className="text-xl font-semibold mb-4 text-blue-200">{title}</h3>
+
+      <p className="leading-relaxed">
         {description}
-        <br /><br />
+        <br />
+        <br />
         {techStack}
-        <br /><br />
-        <span className="flex items-center space-x-2 ml-9">
-          <FaGithub size={30} />
-          <FaArrowRight size={16} />
-          <a
-            href={githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-blue-300"
-          >
-            GitHub
-          </a>
-        </span>
       </p>
+
+      <div className="mt-6 flex items-center justify-center gap-2">
+        <FaGithub size={26} />
+        <FaArrowRight size={16} />
+        <a
+          href={githubUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-blue-300 transition-colors"
+        >
+          GitHub
+        </a>
+      </div>
     </div>
   );
 }
