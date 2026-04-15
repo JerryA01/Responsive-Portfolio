@@ -16,7 +16,7 @@ export default function ProjectDescription({
 }: ProjectDescriptionProps) {
   return (
     <div className="flex h-full flex-col justify-center px-6 py-6">
-      <h3 className="text-xl font-semibold mb-4 text-blue-200">{title}</h3>
+      <h3 className="text-xl font-semibold mb-4 text-purple-200">{title}</h3>
 
       <p className="leading-relaxed">
         {description}
@@ -32,7 +32,7 @@ export default function ProjectDescription({
           href={githubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="underline hover:text-blue-300 transition-colors"
+          className="underline hover:text-fuchsia-300 transition-colors"
         >
           GitHub
         </a>

@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Head from "next/head";
 import ProjectDescription from "./components/ProjectDescription";
 
 const projects = [
@@ -40,16 +39,6 @@ const projects = [
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Jerry Arthur | Full Stack Developer Portfolio</title>
-        <meta
-          name="description"
-          content="Jerry Arthur's software engineering portfolio and projects"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main className="px-6 py-8 md:px-10 lg:px-16">
         {/* Hero */}
         <section className="mx-auto max-w-7xl">
@@ -87,7 +76,7 @@ export default function Home() {
 
         {/* Projects Header */}
         <section className="mx-auto max-w-7xl">
-          <h2 className="text-center text-3xl sm:text-4xl font-bold text-white-700 font-raleway">
+          <h2 className="text-center text-3xl sm:text-4xl font-bold bg-white-700 font-raleway">
             My Projects
           </h2>
         </section>
@@ -100,7 +89,7 @@ export default function Home() {
                 key={project.title}
                 className="rounded-3xl bg-white/10 backdrop-blur-sm p-4 shadow-xl shadow-[0_0_25px_rgba(168,85,247,0.4)]"
               >
-                <h3 className="mb-4 text-center font-raleway text-2xl sm:text-3xl font-semibold text-white-700">
+                <h3 className="mb-4 text-center font-raleway text-2xl sm:text-3xl font-semibold bg-white-700">
                   {project.title}
                 </h3>
 
@@ -134,7 +123,7 @@ export default function Home() {
 
             {/* Coming soon card */}
             <article className="rounded-3xl bg-white/10 backdrop-blur-sm p-4 shadow-xl">
-              <h3 className="mb-4 text-center font-raleway text-2xl sm:text-3xl font-semibold text-white-700">
+              <h3 className="mb-4 text-center font-raleway text-2xl sm:text-3xl font-semibold bg-white-700">
                 Coming Soon
               </h3>
 

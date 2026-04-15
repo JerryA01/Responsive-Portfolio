@@ -7,27 +7,33 @@ interface LayoutProps {
   children: ReactNode;
 }
 
+interface VantaInstance {
+  destroy: () => void;
+}
+
 export default function Layout({ children }: LayoutProps) {
   const vantaRef = useRef<HTMLDivElement | null>(null);
-  const vantaEffect = useRef<VantaEffect | null>(null);
+  const vantaEffect = useRef<VantaInstance | null>(null);
 
   useEffect(() => {
-    if (!vantaEffect.current && typeof window !== "undefined" && vantaRef.current) {
+    const el = vantaRef.current;
+
+    if (!vantaEffect.current && typeof window !== "undefined" && el) {
       import("vanta/src/vanta.fog").then((FOG) => {
         vantaEffect.current = FOG.default({
-          el: vantaRef.current!,
+          el,
           THREE,
           mouseControls: true,
           touchControls: true,
           gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          highlightColor: 0xc084fc, // light violet glow
-          midtoneColor: 0xa855f7,   // strong purple
-          lowlightColor: 0x4c1d95,  // deep violet
-          baseColor: 0x0f172a,      // dark background    
-          speed: 3.30
-        });
+          minHeight: 200,
+          minWidth: 200,
+          highlightColor: 0xc084fc,
+          midtoneColor: 0xa855f7,
+          lowlightColor: 0x4c1d95,
+          baseColor: 0x0f172a,
+          speed: 3.3,
+        }) as VantaInstance;
       });
     }
 
