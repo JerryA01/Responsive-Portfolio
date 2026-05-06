@@ -6,6 +6,7 @@ interface ProjectDescriptionProps {
   description: string;
   techStack: string;
   githubUrl: string;
+  liveUrl?: string;
 }
 
 export default function ProjectDescription({
@@ -13,6 +14,7 @@ export default function ProjectDescription({
   description,
   techStack,
   githubUrl,
+  liveUrl,
 }: ProjectDescriptionProps) {
   return (
     <div className="flex h-full flex-col justify-center px-6 py-6">
@@ -25,17 +27,37 @@ export default function ProjectDescription({
         {techStack}
       </p>
 
-      <div className="mt-6 flex items-center justify-center gap-2">
-        <FaGithub size={26} />
-        <FaArrowRight size={16} />
-        <a
-          href={githubUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline hover:text-fuchsia-300 transition-colors"
-        >
-          GitHub
-        </a>
+      {/* Links */}
+      <div className="mt-6 flex flex-col items-center gap-3">
+
+        {/* Live Demo (only if provided) */}
+        {liveUrl && (
+          <div className="flex items-center gap-2">
+            <FaArrowRight size={16} />
+            <a
+              href={liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-fuchsia-300 transition-colors"
+            >
+              Live Demo
+            </a>
+          </div>
+        )}
+
+        {/* GitHub */}
+        <div className="flex items-center gap-2">
+          <FaGithub size={26} />
+          <FaArrowRight size={16} />
+          <a
+            href={githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-fuchsia-300 transition-colors"
+          >
+            GitHub
+          </a>
+        </div>
       </div>
     </div>
   );

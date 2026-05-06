@@ -5,14 +5,15 @@ import ProjectDescription from "./components/ProjectDescription";
 
 const projects = [
   {
-    title: "Adaptive Learning Platform",
-    descriptionTitle: "What This Platform Does",
-    description:
-      "An interactive, full-stack web application designed to improve the learning of Java programming through structured modules, adaptive learning paths, and real-time code evaluation.",
-    techStack:
-      "🔧 Full-stack architecture with adaptive learning features, structured lesson delivery, and live code feedback for Java learners.",
-    githubUrl: "https://github.com/JerryA01/adaptive-learning-platform",
-    youtubeUrl: "https://www.youtube.com/embed/iiC-daTAA1I",
+  title: "Adaptive Learning Platform",
+  descriptionTitle: "What This Platform Does",
+  description:
+    "An interactive, full-stack web application designed to improve the learning of Java programming through structured modules, adaptive learning paths, and real-time code evaluation.\n\nA live demo is available below.\n\nThe source code is currently private due to university plagiarism policies, as this was my final-year project.\n\nFor Level 4 code levels, users may need to wake the backend runner once by visiting the health endpoint in a separate browser tab:\nhttps://runner-5sas.onrender.com/health — after this, all levels should run smoothly.",
+  techStack:
+    "🔧 Full-stack architecture with adaptive learning features, structured lesson delivery, and live code feedback for Java learners.",
+  liveUrl: "https://adaptive-learning-platform-23f1.vercel.app/",
+  githubUrl: "https://github.com/JerryA01/adaptive-learning-platform",
+  youtubeUrl: "https://www.youtube.com/embed/iiC-daTAA1I",
   },
   {
     title: "Tic Tac Toe Game",
@@ -115,6 +116,7 @@ export default function Home() {
                       description={project.description}
                       techStack={project.techStack}
                       githubUrl={project.githubUrl}
+                      liveUrl={project.liveUrl} 
                     />
                   </div>
                 </div>
