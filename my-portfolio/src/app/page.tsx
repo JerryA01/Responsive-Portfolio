@@ -116,7 +116,6 @@ export default function Home() {
                       description={project.description}
                       techStack={project.techStack}
                       githubUrl={project.githubUrl}
-                      liveUrl={project.liveUrl} 
                     />
                   </div>
                 </div>
