@@ -3,6 +3,8 @@
 ## Project Overview
 A user portfolio website showcasing my work, skills, and projects. Designed to look neat on all screen sizes—from mobile to 4K
 
+### Live Demo - https://jarthur.dev/
+
 ## Tech Stack
 - Next.js - Chosen for its performance optimizations and future scalability
 - React - Excellent for building a dynamic and componenent-based UI
